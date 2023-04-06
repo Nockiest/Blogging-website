@@ -1,0 +1,17 @@
+.active .category-private {line-height: 15px !important;border-left-width: 0 !important;}
+.content-list-2 .has-post-thumbnail {line-height: 15px !important;font-weight: 400 !important;border-left-width: 0 !important;}
+.content-list-2 .category-uncategorized {background-color: rgba(0,0,0,0) !important;border-left-width: 0 !important;}
+.mtp-post-how-i-coded-my-first-website-in-html .wp-site-blocks {background-color: #30b3ff !important;border-right-color: rgba(0,0,0,0) !important;border-left-color: rgba(0,0,0,0) !important;}
+.active .category-uncategorized {border-left-color: rgba(0,0,0,0) !important;}
+.post-cover .category-private {border-left-width: 0 !important;}
+.has-small-font-size .has-post-thumbnail {border-left-width: 0 !important;}
+.has-small-font-size .category-uncategorized {border-left-width: 0 !important;}
+.is-flex-container .category-private {border-left-width: 0 !important;}
+.is-flex-container .has-post-thumbnail {border-left-width: 0 !important;}
+.is-flex-container .category-uncategorized {border-left-width: 0 !important;}
+.has-extra-small-font-size .category-private {border-left-width: 0 !important;}
+.has-extra-small-font-size .has-post-thumbnail {border-left-width: 0 !important;}
+.has-extra-small-font-size .category-uncategorized {border-left-width: 0 !important;}
+.active .has-post-thumbnail {border-left-width: 0 !important;}
+body {background-color: lightBlue !important;}
+header {background-color: lightBlue !important;}
