@@ -10,6 +10,7 @@
 
 
 
+<link rel="stylesheet" id="pt-cv-public-style-css" href="https://andrewebdev.online/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css" type="text/css" media="all">
 <link rel="stylesheet" id="wp-block-library-css" href="https://andrewebdev.online/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
 <link rel="stylesheet" id="classic-theme-styles-css" href="https://andrewebdev.online/wp-includes/css/classic-themes.min.css" type="text/css" media="all">
 <style id="global-styles-inline-css" type="text/css">
@@ -153,8 +154,12 @@ Skip to content</a>
             
             
             <div class="collapse navbar-collapse" id="navbar-wp">
-                  <ul class="nav navbar-nav mx-auto"><li class="nav-item menu-item "><a class="nav-link " href="https://andrewebdev.online/" title="Home">Home</a></li><li class="nav-item menu-item page_item dropdown page-item-2"><a class="nav-link" href="https://andrewebdev.online/sample-page/">About</a></li><li class="nav-item menu-item page_item dropdown page-item-3"><a class="nav-link" href="https://andrewebdev.online/privacy-policy/">Privacy Policy</a></li></ul>
-              </div>
+                  <ul id="menu-main-menu" class="nav navbar-nav mx-auto"><li id="menu-item-75" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-75"><a class="nav-link" title="Home" href="https://andrewebdev.online/">Home</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-76"><a class="nav-link" title="Privacy Policy" href="https://andrewebdev.online/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-72" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-72"><a class="nav-link" title="My Life" href="https://andrewebdev.online/category/my-life/">My Life</a></li>
+<li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a class="nav-link" title="Posts" href="https://andrewebdev.online/posts/">Posts</a></li>
+<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a class="nav-link" title="About" href="https://andrewebdev.online/sample-page/">About</a></li>
+</ul>              </div>
             
           </div>
         </nav>
@@ -370,12 +375,19 @@ Skip to content</a>
                               <div class="bs-footer-copyright">
                     <div class="container">
                         <div class="row">
-                                                       <div class="col-md-12 text-center">
+                                                      <div class="col-md-6 text-left text-xs">
                               <p class="mb-0">
                                 Copyright © All rights reserved                                <span class="sep"> | </span>
                                 <a href="https://themeansar.com/free-themes/blogus/" target="_blank">Blogus</a> by <a href="https://themeansar.com" target="_blank">Themeansar</a>.                                 
                                 </p>
                             </div>
+                                <div class="col-md-6 text-right text-xs">
+                                  <ul id="menu-main-menu-1" class="info-right"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-75"><a class="nav-link" title="Home" href="https://andrewebdev.online/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-76"><a class="nav-link" title="Privacy Policy" href="https://andrewebdev.online/privacy-policy/">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-72"><a class="nav-link" title="My Life" href="https://andrewebdev.online/category/my-life/">My Life</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a class="nav-link" title="Posts" href="https://andrewebdev.online/posts/">Posts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a class="nav-link" title="About" href="https://andrewebdev.online/sample-page/">About</a></li>
+</ul>                            </div>
                                                       </div>
                         </div>
                     </div>
@@ -553,6 +565,13 @@ checkbox.addEventListener('change', ()=> {
 	<script type="text/javascript">
 Sticksy.initializeAll('.bs-sticky', {topSpacing: 0}, { listen: true });
 </script>
+<script type="text/javascript" id="pt-cv-content-views-script-js-extra">
+/* <![CDATA[ */
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"c5f38675e6","is_admin":"","is_mobile":"","ajaxurl":"https:\/\/andrewebdev.online\/wp-admin\/admin-ajax.php","lang":"","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PAGINATION = {"first":"\u00ab","prev":"\u2039","next":"\u203a","last":"\u00bb","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://andrewebdev.online/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js" id="pt-cv-content-views-script-js"></script>
 <script type="text/javascript" src="https://andrewebdev.online/wp-content/themes/blogus/js/dark.js" id="blogus-dark-js"></script>
 <script type="text/javascript" src="https://andrewebdev.online/wp-content/themes/blogus/js/custom.js" id="blogus_custom-js-js"></script>
 	<script>
