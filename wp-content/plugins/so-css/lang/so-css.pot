@@ -1,4 +1,4 @@
-# Copyright (C) 2022 so-css
+# Copyright (C) 2023 so-css
 # This file is distributed under the same license as the so-css package.
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: so-css.php:3, so-css.php:540
+#: so-css.php:3, so-css.php:544
 msgid "SiteOrigin CSS"
 msgstr ""
 
@@ -36,87 +36,87 @@ msgstr ""
 msgid "https://siteorigin.com/css/"
 msgstr ""
 
-#: so-css.php:343, so-css.php:343, so-css.php:386
+#: so-css.php:348, so-css.php:348, so-css.php:391
 msgid "Custom CSS"
 msgstr ""
 
-#: so-css.php:388
+#: so-css.php:393
 msgid "SiteOrigin CSS adds any custom CSS you enter here into your site's header. "
 msgstr ""
 
-#: so-css.php:389
+#: so-css.php:394
 msgid "These changes will persist across updates so it's best to make all your changes here. "
 msgstr ""
 
-#: so-css.php:454
+#: so-css.php:460
 msgid "Unchanged"
 msgstr ""
 
-#: so-css.php:455
+#: so-css.php:461
 msgid "Select"
 msgstr ""
 
-#: so-css.php:456
+#: so-css.php:462
 msgid "Select Image"
 msgstr ""
 
-#: so-css.php:457
+#: so-css.php:463
 msgid "Are you sure you want to leave without saving?"
 msgstr ""
 
-#: so-css.php:526
+#: so-css.php:529
 msgid "CSS Editor"
 msgstr ""
 
-#: so-css.php:527
+#: so-css.php:530
 msgid "Support"
 msgstr ""
 
-#: so-css.php:529
+#: so-css.php:533
 msgid "Addons"
 msgstr ""
 
-#: so-css.php:543
+#: so-css.php:547
 msgid "Changes apply to %s and its child themes"
 msgstr ""
 
-#: so-css.php:544, tpl/page.php:114, tpl/page.php:144
+#: so-css.php:548, tpl/page.php:114, tpl/page.php:144
 msgid "Save CSS"
 msgstr ""
 
-#: so-css.php:551
+#: so-css.php:555
 msgid "Editing CSS for: %s"
 msgstr ""
 
-#: so-css.php:556
+#: so-css.php:560
 msgid "Changes apply to the %s %s when the current theme is %s or its child themes"
 msgstr ""
 
-#: so-css.php:563
+#: so-css.php:567
 msgid "Save %s CSS"
 msgstr ""
 
-#: so-css.php:576
+#: so-css.php:580
 msgid "Revert to this revision"
 msgstr ""
 
-#: so-css.php:631, so-css.php:652, so-css.php:671
+#: so-css.php:634, so-css.php:655, so-css.php:674
 msgid "The supplied nonce is invalid."
 msgstr ""
 
-#: so-css.php:632, so-css.php:653, so-css.php:672
+#: so-css.php:635, so-css.php:656, so-css.php:675
 msgid "Invalid nonce."
 msgstr ""
 
-#: so-css.php:722
+#: so-css.php:726
 msgid "%d chars"
 msgstr ""
 
-#: so-css.php:722
+#: so-css.php:726
 msgid "Latest"
 msgstr ""
 
-#: so-css.php:728
+#: so-css.php:732
 msgid "No revisions yet."
 msgstr ""
 

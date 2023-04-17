@@ -115,6 +115,7 @@
                             <h4 class="title"><?php echo esc_html($blogus_related_post_title);?></h4>
                         </div>
                         <!-- // bs-sec-title -->
+                      <div class="related-post">
                         <div class="row">
                           <!-- featured_post -->
                           <?php global $post;
@@ -166,7 +167,7 @@
                 wp_reset_postdata();
                 ?>
                             </div>
-                            
+                          </div>
                     </div>
                     <!--End bs-realated-slider -->
                   <?php } } $blogus_enable_single_post_comments = esc_attr(get_theme_mod('blogus_enable_single_post_comments',true));
