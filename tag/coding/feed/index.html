@@ -12,7 +12,7 @@
 	<atom:link href="https://andrewebdev.online/tag/coding/feed/" rel="self" type="application/rss+xml" />
 	<link>http://andrewebdev.online/</link>
 	<description>An informative webdevolment site for coders and mormal folks alike</description>
-	<lastBuildDate>Mon, 03 Apr 2023 15:32:41 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 17 Apr 2023 18:01:32 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,244 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Developing a Clicker Defense Game with React and GPT</title>
+		<link>https://andrewebdev.online/developing-a-clicker-defense-game-with-react-and-gpt/</link>
+					<comments>https://andrewebdev.online/developing-a-clicker-defense-game-with-react-and-gpt/#respond</comments>
+		
+		<dc:creator><![CDATA[Andrew]]></dc:creator>
+		<pubDate>Mon, 17 Apr 2023 15:26:25 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[coding]]></category>
+		<category><![CDATA[learning]]></category>
+		<guid isPermaLink="false">https://andrewebdev.online/?p=98</guid>
+
+					<description><![CDATA[Subtitle: My Journey from Vanilla JavaScript to React with the Help of GPT Introduction As...]]></description>
+										<content:encoded><![CDATA[
+<h2 class="wp-block-heading" id="1a17">Subtitle: My Journey from Vanilla JavaScript to React with the Help of GPT</h2>
+
+
+
+<h2 class="wp-block-heading" id="ff09">Introduction</h2>
+
+
+
+<p id="d434">As a gamer and a coding enthusiast, I have always been fascinated by the process of game development. My coding journey started with HTML, CSS, and JavaScript. After building several projects, I felt confident enough to start my own game development journey. In this article, I will share my experience of building a clicker defense game using&nbsp;<a href="https://reactjs.org/" rel="noreferrer noopener" target="_blank">React</a>&nbsp;and&nbsp;<a href="https://openai.com/api/gpt/" rel="noreferrer noopener" target="_blank">GPT</a>.</p>
+
+
+
+<p id="2cfe">∘&nbsp;<a href="https://medium.com/@andwebdev/developing-a-clicker-defense-game-with-react-and-gpt-f31a849c4b8a#ff09">Introduction</a><br>∘&nbsp;<a href="https://medium.com/@andwebdev/developing-a-clicker-defense-game-with-react-and-gpt-f31a849c4b8a#5e60">The Idea</a><br>∘&nbsp;<a href="https://medium.com/@andwebdev/developing-a-clicker-defense-game-with-react-and-gpt-f31a849c4b8a#d3c8">Setting Up the Game Field and Settings Bar</a><br>∘&nbsp;<a href="https://medium.com/@andwebdev/developing-a-clicker-defense-game-with-react-and-gpt-f31a849c4b8a#4b54">Creating Enemies</a><br>∘&nbsp;<a href="https://medium.com/@andwebdev/developing-a-clicker-defense-game-with-react-and-gpt-f31a849c4b8a#f6e7">Movement and More</a><br>∘&nbsp;<a href="https://medium.com/@andwebdev/developing-a-clicker-defense-game-with-react-and-gpt-f31a849c4b8a#6032">Conclusion</a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:700/1*Ti8QVaJ7NS0bmo1uhB6aEg.png" alt=""/></figure>
+
+
+
+<h2 class="wp-block-heading" id="5e60">The Idea</h2>
+
+
+
+<p id="4ae5">My inspiration for this game came from playing simple flash games that I found enjoyable. I wanted to create a game with simple mechanics but challenging gameplay.</p>
+
+
+
+<p id="dfcb"><strong>This is what my game will be about</strong></p>
+
+
+
+<ul>
+<li><strong>Genre:</strong>&nbsp;A kind of tower deffense combined with a clicker game</li>
+
+
+
+<li><strong>Goal:&nbsp;</strong>Survive until wave 40</li>
+
+
+
+<li><strong>Game mechanics:&nbsp;</strong>Enemies will spawn at the top of the game field and advance closer to your base. By reducing their hitpoints they will be killed. This is achived through clicking on them, or placing towers to shoot for you</li>
+
+
+
+<li><strong>Features:</strong>&nbsp;Proggresively harder waves, Reloading you “clicks”, support towers, traps, boss, audio and more</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="d3c8">Setting Up the Game Field and Settings Bar</h2>
+
+
+
+<p id="4948">I started by setting up the game field and the settings bar layout in vanilla JavaScript using a few line prompt. However, with GPT’s recommendation, I switched to using&nbsp;<a href="https://reactjs.org/" rel="noreferrer noopener" target="_blank">React</a>. This allowed me to break down the project into smaller, more manageable components, making it easier to organize and maintain the codebase.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-3">
+<div class="wp-block-column is-layout-flow" style="flex-basis:33.33%">
+<figure class="wp-block-image size-full"><img decoding="async" loading="lazy" width="261" height="260" src="https://andrewebdev.online/wp-content/uploads/2023/04/Vystrizek.png" alt="" class="wp-image-99"/></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow" style="flex-basis:66.66%">
+<figure class="wp-block-image size-full"><img decoding="async" loading="lazy" width="673" height="290" src="https://andrewebdev.online/wp-content/uploads/2023/04/badpromptexample.png" alt="" class="wp-image-100"/></figure>
+</div>
+</div>
+
+
+
+<h2 class="wp-block-heading" id="4b54">Creating Enemies</h2>
+
+
+
+<p id="c01d">After setting up the game field, I created an enemy class and rendered it on the canvas. Then, I tried to kill them using my mouse. It took some fiddling with the calculation of the click coordinates, but I managed to kill them when I clicked on their sprite.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:307/1*pHIBnJM2mMOAVJx29lTsLA.png" alt=""/></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:229/1*XGhr0JmKAlhHk-w853z9-Q.png" alt=""/></figure></div>
+
+
+<h2 class="wp-block-heading" id="f6e7">Movement and More</h2>
+
+
+
+<p id="f2b5">Next, I added movement to the enemies by setting them on top of the game field and making them drop down every 0.01 second by subtracting a speed value from their y index. With everything working, I decided to call it a day for now. However, I will continue to develop my game by adding new features and graphics.</p>
+
+
+
+<blockquote class="wp-block-quote">
+<p class="has-text-align-center" id="69c0">!So that is the current state for now!</p>
+</blockquote>
+
+
+
+<h2 class="wp-block-heading" id="6032">Conclusion</h2>
+
+
+
+<p id="2383">With the help of GPT, I was able to switch from vanilla JavaScript to React, which allowed me to build a more scalable and robust game. While there were some challenges along the way, the end result was worth it. I look forward to continuing my game development journey and sharing updates with you. Stay tuned for more articles, and in the meantime, feel free to read my other articles about JavaScript.</p>
+
+
+
+<p id="6d70">Check out more articles:&nbsp;<a href="https://medium.com/@andwebdev/mastering-sass-how-to-streamline-your-css-workflow-and-create-more-efficient-websites-dc23af773b61">SaSS</a>,&nbsp;<a href="https://medium.com/@andwebdev/7-essential-javascript-libraries-every-developer-should-know-about-a5020fcbd6e9">Js libraries</a>,&nbsp;<a href="https://medium.com/@andwebdev/master-the-game-a-step-by-step-guide-to-coding-a-board-game-in-vanilla-javascript-6158fe157527">Coding a chess clone</a></p>
+
+
+
+<p id="58b2">Do you have experience with game development? Comment bellow!</p>
+
+
+
+<p><a href="https://medium.com/tag/game-development?source=post_page-----f31a849c4b8a---------------game_development-----------------"></a></p>
+
+
+]]></content:encoded>
+					
+					<wfw:commentRss>https://andrewebdev.online/developing-a-clicker-defense-game-with-react-and-gpt/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Mastering Sass: How to Streamline Your CSS Workflow and Create More Efficient Websites</title>
+		<link>https://andrewebdev.online/mastering-sass-how-to-streamline-your-css-workflow-and-create-more-efficient-websites/</link>
+					<comments>https://andrewebdev.online/mastering-sass-how-to-streamline-your-css-workflow-and-create-more-efficient-websites/#respond</comments>
+		
+		<dc:creator><![CDATA[Andrew]]></dc:creator>
+		<pubDate>Thu, 13 Apr 2023 13:56:57 +0000</pubDate>
+				<category><![CDATA[Coding Tips]]></category>
+		<category><![CDATA[coding]]></category>
+		<category><![CDATA[learning]]></category>
+		<guid isPermaLink="false">https://andrewebdev.online/?p=86</guid>
+
+					<description><![CDATA[If you&#8217;re a web developer or designer, you&#8217;re probably familiar with CSS, the language used...]]></description>
+										<content:encoded><![CDATA[
+<p class="has-text-align-left">If you&#8217;re a web developer or designer, you&#8217;re probably familiar with CSS, the language used to style and format web pages. However, as projects grow larger and more complex, maintaining CSS can become a challenge. This is where Sass comes in. Sass is a preprocessor for CSS that offers a variety of features to simplify CSS development, including variables, nesting, and mixins. By learning Sass, you can streamline your development process, write cleaner, more maintainable code, and ultimately save time and effort. In this article, we&#8217;ll take a look at the basics of Sass, advanced features, and best practices for developing with Sass. Whether you&#8217;re a seasoned developer or just starting out, this article will provide you with the knowledge and resources to get started with Sass and take your web development skills to the next level.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" loading="lazy" src="https://andrewebdev.online/wp-content/uploads/2023/04/sassLogo.png" alt="" class="wp-image-87" width="275" height="206"/><figcaption class="wp-element-caption"><em>Sass logo</em></figcaption></figure></div>
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">Streamlining Web Development with Sass Variables: Simplify Your Code and Save Time</h2>
+
+
+
+<p>One of the key advantages of Sass is its ability to use variables to store and reuse values such as colors, fonts, and sizes. This means that you can define a color once and then use that variable throughout your code, rather than having to remember the exact color code every time you need to use it. This feature alone is a game-changer for web developers and designers. Imagine having to change the color scheme of a website with hundreds of pages, each with dozens of CSS rules. With Sass, you can simply change the value of a single variable and all instances of that color will be updated automatically. This can save hours of tedious work and greatly simplify the maintenance of your code.</p>
+
+
+
+<h2 class="wp-block-heading">Exploring Sass Functions: Calculations, Manipulations, and Potential Pitfalls</h2>
+
+
+
+<p>Sass also offers a powerful set of functions for performing calculations and manipulations on values. For example, you can use mathematical operations like addition, subtraction, multiplication, and division to perform calculations on values. Additionally, Sass has a number of built-in functions for converting units, manipulating colors, and generating gradients. However, it&#8217;s worth noting that some of these functions can produce unexpected results if used improperly. For instance, multiplying values with units like &#8220;px&#8221; can lead to strange results such as &#8220;25px * 25px = 625pxpx&#8221;. Similarly, dividing values with the same unit can lead to unexpected results such as &#8220;25px / 25px = 1pxpx&#8221;. Therefore, it&#8217;s important to use Sass functions carefully and test your code thoroughly to avoid these kinds of issues.</p>
+
+
+
+<h2 class="wp-block-heading">Streamline Your Workflow and Improve Your CSS Code with Sass</h2>
+
+
+
+<p>Overall, learning Sass is a valuable skill for any web developer looking to streamline their workflow and improve the organization and maintainability of their CSS code. With Sass, you can write cleaner, more efficient stylesheets in less time, thanks to its powerful features like variables, nesting, mixins, and functions. By learning Sass, you&#8217;ll not only save time and effort in your development process, but you&#8217;ll also produce more reliable and flexible code that&#8217;s easier to maintain over time. So whether you&#8217;re a seasoned CSS pro or just starting out, taking the time to learn Sass is definitely worth it in the long run.</p>
+
+
+
+<h2 class="wp-block-heading">Conclusion</h2>
+
+
+
+<p>In conclusion, learning Sass is a smart investment for any web developer who wants to improve their CSS coding skills and streamline their workflow. By leveraging Sass&#8217;s advanced features, you can create more organized, efficient, and maintainable stylesheets that save you time and effort in the long run. Whether you&#8217;re working on a small personal project or a large team-based website, Sass can help you achieve your goals faster and with less frustration.</p>
+
+
+
+<p>As for me, I&#8217;m excited to continue learning Sass and using it to create more advanced and dynamic websites. In fact, I&#8217;m already planning to use Sass to develop my school&#8217;s website, as it will allow me to create a more cohesive and responsive design that better reflects our institution&#8217;s values and mission. With Sass, I can easily manage colors, fonts, and other design elements in one place, which will save me countless hours of work and help me deliver a website that meets the needs of our students, faculty, and staff.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading">Key points</h2>
+
+
+
+<ul>
+<li>Sass is a powerful CSS preprocessor that helps you write more organized, efficient, and maintainable code.</li>
+
+
+
+<li>Sass provides advanced features such as variables, mixins, and functions that allow you to create reusable code blocks and automate repetitive tasks.</li>
+
+
+
+<li>Sass also makes it easy to manage design elements such as colors, fonts, and spacing, by centralizing them in one place.</li>
+
+
+
+<li>By using Sass, you can improve your coding skills, speed up your workflow, and create more dynamic and responsive websites.</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" loading="lazy" src="https://andrewebdev.online/wp-content/uploads/2023/04/sass-code.jpg" alt="" class="wp-image-88" width="486" height="272"/><figcaption class="wp-element-caption">In Scss you can indent classes into one another</figcaption></figure></div>
+
+
+<p class="has-medium-font-size">You can read even more of my articles by visiting <a href="http://andrewebdev.online" data-type="URL" data-id="andrewebdev.online">andrewebdev.online</a>. If you want to share your experience with using Sass, comment bellow!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://andrewebdev.online/mastering-sass-how-to-streamline-your-css-workflow-and-create-more-efficient-websites/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Best Javascript projects for begginers</title>
 		<link>https://andrewebdev.online/best-javascript-projects-for-begginers/</link>
 					<comments>https://andrewebdev.online/best-javascript-projects-for-begginers/#respond</comments>
@@ -76,7 +314,7 @@
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-large is-resized"><img decoding="async" src="data:image/png;base64,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" alt="" width="334" height="390"/></figure></div>]]></content:encoded>
+<figure class="aligncenter size-large is-resized"><img decoding="async" loading="lazy" src="data:image/png;base64,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" alt="" width="334" height="390"/></figure></div>]]></content:encoded>
 					
 					<wfw:commentRss>https://andrewebdev.online/best-javascript-projects-for-begginers/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
@@ -131,7 +369,7 @@
 
 
 
-<div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-3">
+<div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-6">
 <div class="wp-block-buttons is-layout-flex">
 <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-luminous-vivid-amber-background-color has-background wp-element-button"><strong>Super Simple Dev</strong></a></div>
 </div>
@@ -271,7 +509,7 @@
 
 
 
-<div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-4">
+<div class="wp-block-group is-content-justification-center is-nowrap is-layout-flex wp-container-7">
 <figure class="wp-block-image size-full is-resized"><img decoding="async" loading="lazy" src="https://andrewebdev.online/wp-content/uploads/2023/04/VystrizekHTML-1.png" alt="" class="wp-image-23" width="339" height="409"/></figure>
 
 
